@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/e616370231.js" crossorigin="anonymous"></script>
+  <title>University Eduford</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <script src="https://kit.fontawesome.com/e616370231.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.mine.css">
+  <script src="js/mine.js"></script>
+	<title>Store</title>
+</head>
+<body>
+
+
+<section class="header">
+  <div class="topnav" id="myTopnav">
+    <a href="index.html"><img src="images/logo.png"></a>
+  <a href="index.html" class="active">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="course.html">STORE</a>
+  <a href="contact.html">REGISTRATION</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>  
+<div class="text-box">
+    <h1 class="color-red"> Our Production</h1>
+ </div>     
+ 
+</section>
+
+<section class="products">
+    <div class="all-products">
+      <div class="product">
+        <img src="images/ifssdf.webp">
+        <div class="product-info">
+          <h4 class="product-title">Metamorphosis
+          </h4>
+          <p class="product-price">$129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+
+        </div>
+      </div>
+
+       <div class="product">
+        <img src="images/ifds.webp">
+        <div class="product-info">
+          <h4 class="product-title">demons
+          </h4>
+          <p class="product-price">$129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+
+        </div>
+      </div>
+
+       <div class="product">
+        <img src="images/i.webp">
+        <div class="product-info">
+          <h4 class="product-title">Drive 2011
+          </h4>
+          <p class="product-price">$129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+
+        </div>
+      </div>
+
+       <div class="product">
+        <img src="images/ifdsfgdfsd.webp">
+        <div class="product-info">
+          <h4 class="product-title">Clock work orange
+          </h4>
+          <p class="product-price">$129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+
+        </div>
+      </div>
+  </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+  <div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+      <div class="slider__item">
+        <img class="slider__image" src="images/a on Twitter.png" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/download (1).jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/The Wolf of Wall Street.jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/Secret Cinema Presents Blade Runner - Greatness Reinvented.jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/The Hunt (2012).jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/The Sopranos.jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/Primal Fear (1996).jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/Trainspotting.jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/download.jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="images/Tumblr.jpg" alt="Image">
+        <div class="slider__info">
+        </div>
+      </div>
+    </div>
+    <div class="slider__nav" style="display: flex;justify-content: center;">
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+</body>
+</html>
+
+
+
+  <footer>     
+    </div>
+    <div class="footer-bottom">
+      <p>copyrifht &copy;2023 codeopacity. Desing by <span>rezi</span></p>
+  </footer>
+
+
+
+</body>
+</html>
